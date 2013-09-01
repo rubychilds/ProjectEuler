@@ -1,0 +1,10 @@
+.settings/
+.classpath
+bin/**
+tmp/**
+.launch
+local.properties
+*.tmp
+*.bak
+*.swp
+*~.nib
