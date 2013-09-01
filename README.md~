@@ -12,5 +12,5 @@ A. Uses forloops, whereby we always ensure a &lt; b and rewrite c = 1000 - a - b
 
 ##Problem 10 : Scala solution
 Q. Find the sum of all the primes below two million.
-A. I have given two solutions, one using a isPrime function in method one. The other uses Scala Streams whereby we filter the stream as we iterate through the numbers and the stream only gives us up to the desired number.
+A. I have given two solutions, one using a isPrime function in method one. The other uses Scala Streams whereby we filter the stream as we iterate through the numbers. The stream only gives us up to the desired number when requested through use of a takeWhile.
 
