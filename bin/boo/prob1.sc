@@ -1,13 +1,10 @@
 object prob1 {
                                                     //> from: (n: Int)Stream[Int]
   def from(n: Int): Stream[Int] = n #:: from(n+1)
-  
-  from(3).take(4)
-  // sieves list of primes - passes in stream
+
+  // filters to multiples of 3 or 5 only
   def sieve(s: Stream[Int]): Stream[Int] =
-  // at every point removes all elements in tail which are multiples of current head
-  // i.e. removes all multiples of 2 and so on
-  	s.head #:: sieve(s.tail filter(x => (x%3 == 0 && x%5 == 0) ))
+  	s filter(x => (x%3 == 0 || x%5 == 0) )
   	
  	val mults = sieve(from(3))                     
   // choose first 1000
