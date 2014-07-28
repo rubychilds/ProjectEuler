@@ -5,14 +5,12 @@
 def findPrimeNos(number):
 	z = 2
 	output = 1
-
 	while (z*z <= number):
 		if(number % z == 0):
 			output = z
 			number /= z
 		else:
 			z += 1
-
 	print number
 
 if __name__ == "__main__":

@@ -2,11 +2,10 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 def findCombo():
-		
 	number1, number2 = 0, 0
-	largest= 0
-	x = 999
+	largest = 0
 
+	x = 999
 	while x > 99:
 		y = 999
 		while y > 99:
@@ -23,7 +22,7 @@ def findCombo():
 	return largest		
 
 # 1 line solution.
-max([x*y for x in range(900,1000) for y in range(900,1000) if str(x*y) == str(x*y)[::-1]])
+max(x*y for x in range(900,1000) for y in range(900,1000) if str(x*y) == str(x*y)[::-1])
 
 
 
